@@ -26,12 +26,12 @@ export default {
   
       const startDate = endDate - 2592000000;
       const newStartDate = new Date(startDate);
-      const startYear = newStartDate.getDate().toString();
+      const startYear = newStartDate.getFullYear().toString();
       const startMonth = this.checkDateLength(newStartDate.getMonth()+1);
-      const startDay = this.checkDateLength(newStartDate.getFullYear());
+      const startDay = this.checkDateLength(newStartDate.getDate());
       const startDateReturn = `${startYear}-${startMonth}-${startDay}`
 
-      return {startDateReturn, endDateReturn}
+      return {startDate: startDateReturn, endDate: endDateReturn}
     },
     checkDateLength(date) {
       const dateToString = date.toString()
@@ -44,7 +44,7 @@ export default {
 
   },
   mounted() {
-  getSpaceImages('this', 'that'),
+  getSpaceImages(this.getDate()),
   this.getDate()
   }
 }

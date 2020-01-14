@@ -1,7 +1,7 @@
 const url = process.env.VUE_APP_NASA_API_URL;
 const apiKey = process.env.VUE_APP_NASA_API_KEY;
 
-export const getSpaceImages = async (startDate, endDate) => {
+export const getSpaceImages = async ({startDate, endDate}) => {
     console.log('this is the things: ', url, apiKey);
     console.log(startDate, endDate);
     // console.log(Date.now());
