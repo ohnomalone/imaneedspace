@@ -44,8 +44,15 @@ export default {
 
   },
   mounted() {
-  getSpaceImages(this.getDate()),
+  getSpaceImages(this.getDate())
+    .then( res => this.nasaImages = res)
+
   this.getDate()
+  },
+  data: function() {
+    return {
+      nasaImages: []
+    }
   }
 }
 </script>
