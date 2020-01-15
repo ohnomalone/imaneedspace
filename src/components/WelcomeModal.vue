@@ -13,10 +13,9 @@
                     <slot name="body">
                         <img class="nasa-image" alt="NASA 60th Year Logo" src="../assets/NASA_60th_LOGO_COLOR.jpg">
                         <div class="modal-paragraphs">
-                            <p class="modal-text top-text">NASA is Celebrating 60 years of the agency’s founding by Congress in 1958, and the 50th anniversary of theApollo missions.
-                                </p>
-                            <p class="modal-text">Im'a need space celebrates NASA's 60 years of chaning the world by showcasing some of the most incrediblepictures taken by NASA. 
-                                </p>
+                            <p class="modal-text">NASA is Celebrating 60 years of the agency’s founding by Congress in 1958, and the 50th anniversary of theApollo missions. </p>
+                            <p class="modal-text">Im'a need space celebrates NASA's 60 years of chaning the world by showcasing some of the most incredible pictures taken by NASA.  </p>
+                            <p class="modal-text">Starting with today's date, view the last 30 days of pictures NASA has placed the honor as pictuer of the day. Scroll left to work your way through the past month of photos.  </p>
                         </div>
                     </slot>
                 </div>
@@ -104,8 +103,11 @@ export default {
     }
     .modal-paragraphs {
         margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly
     }
-    .top-text {
+    .modal-text {
         margin-bottom: 10px;
     }
     .nasa-image {
