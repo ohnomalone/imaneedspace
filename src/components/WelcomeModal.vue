@@ -13,9 +13,9 @@
                     <slot name="body">
                         <img class="nasa-image" alt="NASA 60th Year Logo" src="../assets/NASA_60th_LOGO_COLOR.jpg">
                         <div class="modal-paragraphs">
-                            <p class="modal-text">NASA is Celebrating 60 years of the agency’s founding by Congress in 1958, and the 50th anniversary of theApollo missions. </p>
-                            <p class="modal-text">Im'a need space celebrates NASA's 60 years of chaning the world by showcasing some of the most incredible pictures taken by NASA.  </p>
-                            <p class="modal-text">Starting with today's date, view the last 30 days of pictures NASA has placed the honor as pictuer of the day. Scroll left to work your way through the past month of photos.  </p>
+                            <p class="modal-text">NASA is Celebrating 60 years of the agency’s founding by Congress in 1958, and the 50th anniversary of the Apollo missions. </p>
+                            <p class="modal-text">Im'a need space celebrates NASA's 60 years of changing the world by showcasing some of the most incredible pictures taken by NASA.  </p>
+                            <p class="modal-text">Starting with today's date, view the last 30 days of pictures NASA has placed the honor as the picture of the day. Scroll left to work your way through the past month of photos.  </p>
                             <p class="modal-text">Learn more about NASA and its 60 years of history <a href="http://www.nasa.gov">here</a>.</p>
                         </div>
                     </slot>
