@@ -43,12 +43,13 @@ export default {
       align-content: center;
       align-items: center;
       position: relative;
+      scroll-snap-align: center;
   }
   .image {
       height: 95vh;
       margin: 15px;
       position: relative;
-      /* width: 90vw; */
+      width: 98vw;
   }
   .text-holder {
       display: flex;

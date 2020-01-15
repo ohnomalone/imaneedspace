@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="images">
-                <NasaImage v-bind:key="i" v-for="(item, i) in this.nasaImages" v-bind:item="item"></NasaImage>
+                <NasaImage class="nasaImages" v-bind:key="i" v-for="(item, i) in this.nasaImages" v-bind:item="item"></NasaImage>
         </div>
     </div>
 </template>
@@ -26,10 +26,14 @@ export default {
     padding: 0;
   } */
   .images {
-      align-items: center;
-      background-color: #000;
-      display: flex;
-      flex-direction: row-reverse;
-      overflow: scroll;
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  .nasaImages {
+    scroll-snap-align: center;
   }
 </style>
