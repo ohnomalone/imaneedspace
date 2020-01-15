@@ -2,7 +2,7 @@
   <div>
     <div id="app">
       <Header/>
-      <AllImages class="allImages" images:this.nasaImages />
+      <AllImages class="allImages" :nasaImages='this.nasaImages' />
     </div>
   </div>
 </template>
