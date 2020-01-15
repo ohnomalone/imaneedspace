@@ -1,17 +1,17 @@
 <template>
     <div>
         <div class="images">
-                <SpaceImage v-bind:key="i" v-for="(item, i) in this.nasaImages" v-bind:item="item"></SpaceImage>
+                <NasaImage v-bind:key="i" v-for="(item, i) in this.nasaImages" v-bind:item="item"></NasaImage>
         </div>
     </div>
 </template>
 
 <script>
-import SpaceImage from './SpaceImage'
+import NasaImage from './NasaImage'
 export default {
     name: 'AllImages',
     components: {
-        SpaceImage
+        NasaImage
     },
     props: {
         nasaImages: Array
@@ -30,5 +30,6 @@ export default {
       background-color: #000;
       display: flex;
       flex-direction: row-reverse;
+      overflow: scroll;
   }
 </style>

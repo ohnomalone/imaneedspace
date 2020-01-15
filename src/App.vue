@@ -47,7 +47,7 @@ export default {
   },
   mounted() {
   getSpaceImages(this.getDate())
-    .then( res => this.nasaImages = res)
+    .then( res => this.nasaImages = res.reverse())
 
   this.getDate()
   },
@@ -69,5 +69,7 @@ export default {
   font-family: 'Titillium Web', sans-serif;  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  height: 100vh;
 }
 </style>
