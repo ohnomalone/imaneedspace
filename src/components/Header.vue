@@ -25,6 +25,7 @@ export default {
     width: 100%;
     position: fixed;
     padding: 5px;
+    z-index: 10;
 }
 .logo-title {
     display: flex;
