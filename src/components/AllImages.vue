@@ -27,6 +27,11 @@ export default {
     flex-direction: row-reverse;
     overflow: scroll;
     scroll-snap-type: x mandatory;
+    scroll-snap-type: mandatory; /* Firefox */  
+    -ms-scroll-snap-type: mandatory; /* IE/Edge */  
+    -webkit-scroll-snap-type: x mandatory; /* Safari */  
+    -webkit-scroll-snap-destination: 0% 0%;  
+    -webkit-overflow-scrolling: touch; /* important for iOS */ 
   }
   .nasaImages {
     scroll-snap-align: center;

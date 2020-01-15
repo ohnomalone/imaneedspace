@@ -44,6 +44,8 @@ export default {
       align-items: center;
       position: relative;
       scroll-snap-align: center;
+      scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */  
+        -webkit-scroll-snap-coordinate: 0% 0%; /* older (Safari) */  
   }
   .image {
       height: 95vh;
