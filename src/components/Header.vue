@@ -23,7 +23,8 @@ export default {
 .header {
     background-color: #000;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
+    padding: 5px;
 }
 .logo-title {
     display: flex;

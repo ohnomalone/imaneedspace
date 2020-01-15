@@ -1,19 +1,22 @@
 <template>
-  <div id="app">
-    <Header/>
+  <div>
+    <div id="app">
+      <Header/>
+      <AllImages class="allImages" images:this.nasaImages />
+    </div>
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
+import AllImages from './components/AllImages'
 import { getSpaceImages } from './apiCall'
-
 
 export default {
   name: 'app',
   components: {
-    Header
+    Header,
+    AllImages
   },
   methods: {
     getDate() {
@@ -41,7 +44,6 @@ export default {
         return dateToString
       }
     }
-
   },
   mounted() {
   getSpaceImages(this.getDate())
