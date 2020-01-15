@@ -2,7 +2,7 @@
     <header class="header">
         <div class='logo-title'>
             <h1 class="title">I'ma need space</h1>
-            <img alt="NASA 60th Year Logo" src="../assets/nasa_logo.png">
+            <img alt="NASA Logo" src="../assets/nasa_logo.png">
         </div>
     </header>
 </template>

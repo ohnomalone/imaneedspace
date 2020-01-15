@@ -3,6 +3,7 @@
     <div id="app">
       <Header/>
       <AllImages class="allImages" :nasaImages='this.nasaImages' />
+      <WelcomeModal />
     </div>
   </div>
 </template>
@@ -10,13 +11,15 @@
 <script>
 import Header from './components/Header.vue'
 import AllImages from './components/AllImages'
+import WelcomeModal from './components/WelcomeModal'
 import { getSpaceImages } from './apiCall'
 
 export default {
   name: 'app',
   components: {
     Header,
-    AllImages
+    AllImages,
+    WelcomeModal
   },
   methods: {
     getDate() {
@@ -48,7 +51,6 @@ export default {
   mounted() {
   getSpaceImages(this.getDate())
     .then( res => this.nasaImages = res.reverse())
-
   this.getDate()
   },
   data: function() {

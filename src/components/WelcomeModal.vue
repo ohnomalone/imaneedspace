@@ -1,26 +1,30 @@
 <template>
-    <!-- <script type="text/x-template" id="modal-template"> -->
         <transition v-if="this.showModal" name="modal">
             <div class="modal-mask">
             <div class="modal-wrapper">
                 <div class="modal-container">
 
                 <div class="modal-header">
-                    <slot name="header">
-                    default header
-                    </slot>
+                    <h2 class="welcome-title">Celebrating 60 years of</h2>
+                    <img alt="NASA Logo" class="nasa-logo" src="../assets/nasa_logo.png">
                 </div>
 
                 <div class="modal-body">
                     <slot name="body">
-                    default body
+                        <img class="nasa-image" alt="NASA 60th Year Logo" src="../assets/NASA_60th_LOGO_COLOR.jpg">
+                        <div class="modal-paragraphs">
+                            <p class="modal-text top-text">NASA is Celebrating 60 years of the agency’s founding by Congress in 1958, and the 50th anniversary of theApollo missions.
+                                </p>
+                            <p class="modal-text">Im'a need space celebrates NASA's 60 years of chaning the world by showcasing some of the most incrediblepictures taken by NASA. 
+                                </p>
+                        </div>
                     </slot>
                 </div>
 
                 <div class="modal-footer">
                     <slot name="footer">
                     default footer
-                    <button class="modal-default-button" @click="$emit('close')">
+                    <button class="modal-default-button" @click='closeModal'>
                         OK
                     </button>
                     </slot>
@@ -29,7 +33,6 @@
             </div>
             </div>
         </transition>
-    <!-- </script> -->
 </template>
 
 <script>
@@ -49,6 +52,11 @@ export default {
 </script>
 
 <style scoped>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
     .modal-mask {
     position: fixed;
     z-index: 9998;
@@ -67,7 +75,7 @@ export default {
     }
 
     .modal-container {
-    width: 300px;
+    width: 600px;
     margin: 0px auto;
     padding: 20px 30px;
     background-color: #fff;
@@ -77,15 +85,32 @@ export default {
     font-family: Helvetica, Arial, sans-serif;
     }
 
-    .modal-header h3 {
+    .modal-header {
     margin-top: 0;
     color: #42b983;
+    display: flex;
+    justify-content: center;
     }
-
+    .welcome-title {
+        color: #000;
+    }
+    .nasa-logo {
+        height: 25px;
+        margin-left: 10px;
+    }
     .modal-body {
     margin: 20px 0;
+    display: flex;
     }
-
+    .modal-paragraphs {
+        margin-left: 15px;
+    }
+    .top-text {
+        margin-bottom: 10px;
+    }
+    .nasa-image {
+        height: 300px;
+    }
     .modal-default-button {
     float: right;
     }
