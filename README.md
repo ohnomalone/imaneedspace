@@ -26,7 +26,7 @@ Chekck it out here: [here](https://github.com/matthewdshepherd/imaneedsomespace)
 ## Screenshots
 <img width="1440" alt="Welcome Modal" src="./src/assets/Ima_need_space_welcome_modal.png">
 <img width="1440" alt="Today's Image " src="./src/assets/Ima_need_space_today_image.png">
-<img width="1440" alt="Yesterday's Image " src="./src/assets/Ima_need_space_yesterday.png">
+<img width="1440" alt="Yesterday's Image " src="./src/assets/Ima_need_space_yesterday_image.png">
 
 ## Features
 
