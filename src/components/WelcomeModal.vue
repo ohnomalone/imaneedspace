@@ -16,15 +16,15 @@
                             <p class="modal-text">NASA is Celebrating 60 years of the agency’s founding by Congress in 1958, and the 50th anniversary of theApollo missions. </p>
                             <p class="modal-text">Im'a need space celebrates NASA's 60 years of chaning the world by showcasing some of the most incredible pictures taken by NASA.  </p>
                             <p class="modal-text">Starting with today's date, view the last 30 days of pictures NASA has placed the honor as pictuer of the day. Scroll left to work your way through the past month of photos.  </p>
+                            <p class="modal-text">Learn more about NASA and its 60 years of history <a href="http://www.nasa.gov">here</a>.</p>
                         </div>
                     </slot>
                 </div>
 
                 <div class="modal-footer">
                     <slot name="footer">
-                    default footer
                     <button class="modal-default-button" @click='closeModal'>
-                        OK
+                    VIEW PHOTOS
                     </button>
                     </slot>
                 </div>
@@ -113,7 +113,14 @@ export default {
     .nasa-image {
         height: 300px;
     }
-    .modal-default-button {
-    float: right;
+    .modal-footer {
+        display: flex;
+        flex-direction: row-reverse;
     }
+    .modal-default-button {
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
 </style>
