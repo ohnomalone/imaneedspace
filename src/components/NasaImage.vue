@@ -47,9 +47,10 @@ export default {
   }
   .image {
       height: 95vh;
-      margin: 15px;
+      margin: 15px 0;
+      padding: 0 2%;
       position: relative;
-      width: 98vw;
+      width: 100vw;
   }
   .text-holder {
       display: flex;

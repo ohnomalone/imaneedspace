@@ -20,11 +20,6 @@ export default {
 </script>
 
 <style scoped>
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  } */
   .images {
     align-items: center;
     background-color: #000;
