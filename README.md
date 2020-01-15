@@ -10,6 +10,9 @@ By:
 * [Features](#Features)
 * [Why'd-I-Do-This?](Why'd-I-Do-This?)
 
+## Try It Out
+
+Chekck it out here: [here](https://github.com/matthewdshepherd/imaneedsomespace)
 
 ## Built With
 
@@ -21,8 +24,9 @@ By:
 - NASA API - picture of the day
 
 ## Screenshots
-
-
+<img width="1440" alt="Welcome Modal" src="./src/assets/Ima_need_space_welcome_modal.png">
+<img width="1440" alt="Today's Image " src="./src/assets/Ima_need_space_today_image.png">
+<img width="1440" alt="Yesterday's Image " src="./src/assets/Ima_need_space_yesterdya.png">
 
 ## Features
 
